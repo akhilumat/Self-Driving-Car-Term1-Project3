@@ -1,3 +1,5 @@
+Please refer to Project Writeup and Video for more detail of work done
+
 # Self-Driving-Car-Term1-Project3
 Behavioral Cloning
 Writeup Template
