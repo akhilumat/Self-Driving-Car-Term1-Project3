@@ -18,6 +18,7 @@ leaving the road
  Summarize the results with a written report
 
 ##Files Submitted & Code Quality
+
 ###1. Submission includes all required files and can be used to run the
 simulator in autonomous mode
 
