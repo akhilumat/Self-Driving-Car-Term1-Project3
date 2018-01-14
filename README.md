@@ -1,12 +1,14 @@
 Please refer to Project Writeup and Video for more detail of work done
 
 # Self-Driving-Car-Term1-Project3
-Behavioral Cloning
-Writeup Template
+##Behavioral Cloning
 
-Behavioral Cloning Project
+##Writeup Template
 
-The goals / steps of this project are the following:
+##Behavioral Cloning Project
+
+###The goals / steps of this project are the following:
+
  Use the simulator to collect data of good driving behavior
  Build, a convolution neural network in Keras that predicts steering
 angles from images
@@ -15,10 +17,11 @@ angles from images
 leaving the road
  Summarize the results with a written report
 
-Files Submitted & Code Quality
-1. Submission includes all required files and can be used to run the
+##Files Submitted & Code Quality
+###1. Submission includes all required files and can be used to run the
 simulator in autonomous mode
-My project includes the following files:
+
+###My project includes the following files:
 
  Akhil_P3.ipynb containing the script to create and train the model
  drive.py for driving the car in autonomous mode
@@ -26,22 +29,22 @@ My project includes the following files:
  writeup_report.pdf summarizing the results
  run1.mp4 file showing run of the first track
 
-2. Submission includes functional code
+###2. Submission includes functional code
 
 Using the Udacity provided simulator and my drive.py file, the car can be
 driven autonomously around the track by executing
 python drive.py model.h5
 
-3. Submission code is usable and readable
+###3. Submission code is usable and readable
 
 The Akhil_P3.ipynb file contains the code for training and saving the
 convolution neural network. The file shows the pipeline I used for
 training and validating the model, and it contains comments to explain
 how the code works.
 
-Model Architecture and Training Strategy
+##Model Architecture and Training Strategy
 
-1.An appropriate model architecture has been employed
+###1.An appropriate model architecture has been employed
 
 My model consists of 5 convolution neural network layers and 4 fully
 connected layers. Filter sizes for each layer were 5x5, 5x5, 5x5, 3x3 and
@@ -52,7 +55,7 @@ dividing each pixel by 255 and then subtracting 0.5. Since top portion of
 the image is a distraction to train the model I cropped off to 70 pixels.
 Also I cropped off lower 25 pixels which shows vehicle front. 
 
-2. Attempts to reduce over-fitting in the model
+###2. Attempts to reduce over-fitting in the model
 
 To prevent over-fitting model was trained and validated on different data
 sets. Images were collected by running the vehicle 2 laps counter
@@ -64,13 +67,13 @@ increased validation loss. In the end, the model was tested by running it
 through the simulator and ensuring that the vehicle could stay on the
 track.
 
-3. Model parameter tuning
+###3. Model parameter tuning
 
 The model used an Adam optimizer, so the learning rate was not tuned
 manually. Along with that I tuned steering angles when the camera would
 drive to side of the road. The final tuned value was 0.15
 
-4. Appropriate training data
+###4. Appropriate training data
 
 Training data was chosen to keep the vehicle driving on the road. I used
 a combination of centre lane driving, recovering from the left and right
@@ -82,9 +85,9 @@ those images were slightly modified. As per code the vehicle would steer
 vehicle from side lanes was the most important images taken since they
 prevented my vehicle to steer off the edges.
 
-Model Architecture and Training Strategy
+##Model Architecture and Training Strategy
 
-1. Solution Design Approach
+###1. Solution Design Approach
 
 Since deep networks generally perform well to identify image, I used
 model used by Nvidia in their self driving car. This model 5 CNN layers
@@ -106,13 +109,13 @@ for both training and validation sets.
 At the end of the process, the vehicle was able to drive autonomously
 around the track without leaving the road.
 
-2. Final Model Architecture
+###2. Final Model Architecture
 
 The final model architecture consisted of a normalisation layer followed
 by cropping layer. Then there were 5 convolution neural network layers
 and 4 flattened layers.
 
-3. Creation of the Training Set & Training Process
+###3. Creation of the Training Set & Training Process
 
 To capture good driving behavior, I first recorded two laps on track one
 using center lane driving. Here is an example image of center lane
